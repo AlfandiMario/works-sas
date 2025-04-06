@@ -1,0 +1,262 @@
+{
+    "all_data": [
+        {
+            "file_name": "ktp-20250227082049.jpg",
+            "data": {
+                "nik": "3311091904020003",
+                "nama": "MARIO ALFANDI WIRAWAN",
+                "tempat": "SURAKARTA",
+                "tgl_lahir": "19-04-2002",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "SETONO",
+                "rt": "002",
+                "rw": "002",
+                "kel_desa": "LAWEYAN",
+                "kecamatan": "LAWEYAN",
+                "agama": "ISLAM",
+                "status_perkawinan": "BELUM KAWIN",
+                "pekerjaan": "PELAJAR/MAHASISWA",
+                "kewarganegaraan": "WNI",
+                "berlaku_hingga": "SEUMUR HIDUP"
+            }
+        },
+        {
+            "file_name": "ktp-20250227090204.jpg",
+            "data": {
+                "nik": "3374075104920002",
+                "nama": "FITRI APRIANTI",
+                "tempat": "CIAMIS",
+                "tgl_lahir": "11-04-1992",
+                "jenis_kelamin": "PEREMPUAN",
+                "alamat": "JL. KEBON AGUNG UTARA RAYA NO. 19",
+                "rt": "004",
+                "rw": "017",
+                "kel_desa": "KEBONBATUR",
+                "agama": "ISLAM",
+                "status_perkawinan": "KAWIN",
+                "pekerjaan": "KARYAWAN SWASTA",
+                "kewarganegaraan": "WNI",
+                "berlaku_hingga": "SEUMUR HIDUP"
+            }
+        },
+        {
+            "file_name": "ktp-20250227090242.jpg",
+            "data": {
+                "nik": "3309100611000001",
+                "nama": "ALFIANTO ANDY PAMUNGKAS",
+                "tempat": "BOYOLALI",
+                "tgl_lahir": "06-11-2000",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "GAJAHWONGAN",
+                "rt": "003",
+                "rw": "005",
+                "kel_desa": "CANDEN",
+                "kecamatan": "SAMBI",
+                "agama": "ISLAM",
+                "status_perkawinan": "BELUM KAWIN",
+                "pekerjaan": "PELAJAR/MAHASISWA",
+                "kewarganegaraan": "WNI",
+                "berlaku_hingga": "SEUMUR HIDUP"
+            }
+        },
+        {
+            "file_name": "ktp-20250227090321.jpg",
+            "data": {
+                "nik": "3403012212990003",
+                "nama": "ADIB WIRAWAN PRATITO",
+                "tempat": "GUNUNGKIDUL",
+                "tgl_lahir": "22-12-1999",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "LEDOKSARI",
+                "rt": "008",
+                "rw": "007",
+                "kel_desa": "KEPEK",
+                "kecamatan": "WONOSARI",
+                "agama": "ISLAM",
+                "status_perkawinan": "BELLUM KAWIN",
+                "pekerjaan": "PELAJAR/MAHASISWA",
+                "kewarganegaraan": "WNI",
+                "berlaku_hingga": "SEUMUR HIDUP"
+            }
+        },
+        {
+            "file_name": "ktp-20250227090408.jpg",
+            "data": {
+                "nik": "3375021006990003",
+                "nama": "STEPHEN KUSUMO",
+                "tempat": "PEKALONGAN",
+                "tgl_lahir": "10-06-1999",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "Jl. BINA GRAYA RAYA BLOK B NO.4",
+                "rt": "005",
+                "rw": "008",
+                "kel_desa": "MEDONO",
+                "kecamatan": "PEKALONGAN BARAT",
+                "agama": "KRISTEN",
+                "status_perkawinan": "BELUM KAWIN",
+                "pekerjaan": "PELAJAR/MAHASISWA",
+                "kewarganegaraan": "WNI",
+                "berlaku_hingga": "SEUMUR HIDUP"
+            }
+        },
+        {
+            "file_name": "ktp-20250227090521.jpg",
+            "data": {
+                "nik": "3314041207990001",
+                "nama": "HANAN ASKARIM",
+                "tempat": "SRAGEN",
+                "tgl_lahir": "12-07-1999",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "PENGKOK",
+                "rt": "018",
+                "rw": "000",
+                "kel_desa": "PENGKOK",
+                "kecamatan": "KEDAWUNG",
+                "agama": "ISLAM",
+                "status_perkawinan": "BELUM KAWIN",
+                "pekerjaan": "PELAJAR/MAHASISWA",
+                "kewarganegaraan": "WNI",
+                "berlaku_hingga": "SEUMUR HIDUP"
+            }
+        },
+        {
+            "file_name": "ktp-20250227090620.jpg",
+            "data": {
+                "nik": "3273180312710001",
+                "nama": "IR.FX.PADMANTO KRISTIANA",
+                "tempat": "SURAKARTA",
+                "tgl_lahir": "03-12-1971",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "JL. MUARAJEUN TENGAH NO.22",
+                "rt": "004",
+                "rw": "011",
+                "kel_desa": "CIHAURGEULIS",
+                "kecamatan": "CIABEUNTING KALER",
+                "agama": "KATHOLIK",
+                "status_perkawinan": "KAWIN",
+                "pekerjaan": "KARYAWAN SWASTA",
+                "kewarganegaraan": "WNI",
+                "berlaku_hingga": "03-12-2018"
+            }
+        },
+        {
+            "file_name": "ktp-20250227090744.jpg",
+            "data": {
+                "nik": "3501112206880003",
+                "nama": "FAJRI HARDHITA MURTI",
+                "tempat": "BANGKALAN",
+                "tgl_lahir": "22-06-1988",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "LODRO",
+                "rt": "004",
+                "rw": "002",
+                "kel_desa": "BOGOHARJO",
+                "kecamatan": "NGADIROJO",
+                "agama": "ISLAM",
+                "status_pernikahan": "BELUM KAWIN",
+                "pekerjaan": "PELAJAR/MAHASISWA",
+                "kewarganegaraan": "WNI",
+                "berlaku_hingga": "22-06-2017"
+            }
+        },
+        {
+            "file_name": "ktp-20250227093844.jpg",
+            "data": {
+                "nik": "3471140209790001",
+                "nama": "RIYANTO. SE",
+                "tempat": "GROBOGAN",
+                "tgl.lahir": "02-09-1979",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "PRM PURI DOMAS D.3, SEMPU",
+                "rt": "001",
+                "rw": "024",
+                "kel_desa": "WEDOMARTANI",
+                "kecamatan": "NGEMPLAK",
+                "agama": "ISLAM",
+                "status_perkawinan": "KAWIN",
+                "pekerjaan": "PEDAGANG",
+                "kewarganegaraan": "WNI",
+                "berlaku_hingga": "02-09-2017"
+            }
+        },
+        {
+            "file_name": "ktp-20250227093953.jpg",
+            "data": {
+                "nik": "1771042401930002",
+                "nama": "GALANG RAKA PRATAMA",
+                "tempat": "BENGKULU",
+                "tgl_lahir": "24-01-1993",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "JL.UNIB PERMA III NO 35 PERUMNAS UNIB",
+                "rt": "015",
+                "rw": "003",
+                "kel_desa": "PEMATANG GUBERNUR",
+                "kecamatan": "MUARA BANGKAHULU",
+                "agama": "ISLAM",
+                "status_perkawinan": "BELUM KAWIN",
+                "pekerjaan": "PELAJAR/MAHASISWA",
+                "kewarganegaraan": "WNI",
+                "berlaku_hingga": "24-01-2017"
+            }
+        },
+        {
+            "file_name": "ktp-20250227094036.jpg",
+            "data": {
+                "nik": "3217061804870007",
+                "nama": "ARIEF WIJAYA PUTRA",
+                "tempat": "BANDUNG",
+                "tgl_lahir": "18-04-1987",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "JL. AMIR MAHMUD GG. SIRNAGALIH NO. 62",
+                "rt": "005",
+                "rw": "006",
+                "kel_desa": "CIBABAT",
+                "kecamatan": "CIMAHI UTARA",
+                "agama": "ISLAM",
+                "status_perkawinan": "BELUM KAWIN",
+                "pekerjaan": "PELAJAR/MAHASISWA",
+                "kewarganegaraan": "WINI",
+                "berlaku_hingga": "SEUMUR HIDUP"
+            }
+        },
+        {
+            "file_name": "ktp-20250227094120.jpg",
+            "data": {
+                "nik": "3523160608000003",
+                "nama": "MAFTUCHIN",
+                "tempat": "TUBAN",
+                "tgl_lahir": "06-06-1980",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "JL. MASJID AL FALAH",
+                "rt": "001",
+                "rw": "002",
+                "kel_desa": "SUGIHARJO",
+                "kecamatan": "TUBAN",
+                "agama": "ISLAM",
+                "status_perkawinan": "KAWIN",
+                "pekerjaan": "WIRASWASTA",
+                "kewarganegaraan": "WNI",
+                "berlaku_hingga": "06-06-2017"
+            }
+        },
+        {
+            "file_name": "ktp-20250227094220.jpg",
+            "data": {
+                "nik": "3216061812590006",
+                "nama": "WIDIASO",
+                "tempat": "PEMALANG",
+                "tgl_lahir": "18-12-1959",
+                "jenis_kelamin": "LAKI-LAKI",
+                "alamat": "SKU JL.SUMATRA BLOK B78/15",
+                "rt": "003",
+                "rw": "004",
+                "kel_desa": "MEKARSARI",
+                "kecamatan": "TAMUIN SELATAN",
+                "agama": "ISLAM",
+                "status_perkawinan": "KAWIN",
+                "pekerjaan": "KARYAWAN SWASTA",
+                "bertalu_hingga": "18-12-2018"
+            }
+        }
+    ]
+}

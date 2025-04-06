@@ -1,0 +1,226 @@
+const URL = "/one-api/mockup/sampling-lab-mobile-cpone-v6/";
+
+export async function search_patient(prm) {
+    try {
+        var resp = await axios.post(URL + 'patient/search_patient', prm);
+        if (resp.status != 200) {
+            return {
+                status: "ERR",
+                message: resp.statusText
+            };
+        }
+        let data = resp.data;
+        return data;
+    } catch (e) {
+        return {
+            status: "ERR",
+            message: e.message
+        };
+    }
+}
+
+export async function scan_patient(prm) {
+    try {
+        var resp = await axios.post(URL + 'patient/scan_patient', prm);
+        if (resp.status != 200) {
+            return {
+                status: "ERR",
+                message: resp.statusText
+            };
+        }
+        let data = resp.data;
+        return data;
+    } catch (e) {
+        return {
+            status: "ERR",
+            message: e.message
+        };
+    }
+}
+
+export async function search(prm) {
+    try {
+        var resp = await axios.post(URL + 'patient/search', prm);
+        if (resp.status != 200) {
+            return {
+                status: "ERR",
+                message: resp.statusText
+            };
+        }
+        let data = resp.data;
+        return data;
+    } catch (e) {
+        return {
+            status: "ERR",
+            message: e.message
+        };
+    }
+}
+
+
+
+export async function searchcompany(token, prm) {
+    try {
+        var resp = await axios.post(URL + 'patient/searchcompany', { token: token, search: prm });
+        if (resp.status != 200) {
+            return {
+                status: "ERR",
+                message: resp.statusText
+            };
+        }
+        let data = resp.data;
+        return data;
+    } catch (e) {
+        return {
+            status: "ERR",
+            message: e.message
+        };
+    }
+}
+
+
+export async function lookup_statuses(prm) {
+    try {
+        var resp = await axios.post(URL + 'patient/lookup_statuses', prm);
+        if (resp.status != 200) {
+            return {
+                status: "ERR",
+                message: resp.statusText
+            };
+        }
+        let data = resp.data;
+        return data;
+    } catch (e) {
+        return {
+            status: "ERR",
+            message: e.message
+        };
+    }
+}
+
+export async function getdatabarcodes(prm) {
+    try {
+        var resp = await axios.post(URL + 'patient/lookup_barcodes', prm);
+        if (resp.status != 200) {
+            return {
+                status: "ERR",
+                message: resp.statusText
+            };
+        }
+        let data = resp.data;
+        return data;
+    } catch (e) {
+        return {
+            status: "ERR",
+            message: e.message
+        };
+    }
+}
+
+
+export async function serahkan(prm) {
+    try {
+        var resp = await axios.post(URL + 'patient/serahkan', prm);
+        if (resp.status != 200) {
+            return {
+                status: "ERR",
+                message: resp.statusText
+            };
+        }
+        let data = resp.data;
+        return data;
+    } catch (e) {
+        return {
+            status: "ERR",
+            message: e.message
+        };
+    }
+}
+
+
+export async function getstations(token) {
+    try {
+        let prm = { token: token }
+        var resp = await axios.post(URL + 'patient/getstations', prm);
+        if (resp.status != 200) {
+            return {
+                status: "ERR",
+                message: resp.statusText
+            };
+        }
+        let data = resp.data;
+        return data;
+    } catch (e) {
+        return {
+            status: "ERR",
+            message: e.message
+        };
+    }
+}
+
+
+export async function getLocation(prm) {
+    try {
+        var resp = await axios.post(URL + 'patient/getlocation', prm);
+        if (resp.status != 200) {
+            return {
+                status: "ERR",
+                message: resp.statusText
+            };
+        }
+        let data = resp.data;
+        return data;
+    } catch (e) {
+        return {
+            status: "ERR",
+            message: e.message
+        };
+    }
+}
+
+
+export async function skipaction(prm) {
+    try {
+        var resp = await axios.post(URL + 'patient/skipaction', prm);
+        if (resp.status != 200) {
+            return {
+                status: "ERR",
+                message: resp.statusText
+            };
+        }
+        let data = resp.data;
+        return data;
+    } catch (e) {
+        return {
+            status: "ERR",
+            message: e.message
+        };
+    }
+}
+
+
+export async function scanbarcode(prm) {
+    try {
+        var url_now = 'patient/scanbarcode'
+        if (prm.station.isnonlab !== "") {
+            url_now = 'patient/scanbarcode_nonlab'
+        }
+        /*if(prm.station.isadditional === "Y"){
+            url_now = 'patient/scanbarcode_additional_fisik'
+        }*/
+        var resp = await axios.post(URL + url_now, prm);
+        if (resp.status != 200) {
+            return {
+                status: "ERR",
+                message: resp.statusText
+            };
+        }
+        let data = resp.data;
+        return data;
+    } catch (e) {
+        return {
+            status: "ERR",
+            message: e.message
+        };
+    }
+}

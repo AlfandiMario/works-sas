@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice-to-Text Proof of Concept</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Voice-to-Text Proof of Concept</h1>
+        <div class="content">
+            <!-- QR Code Section -->
+            <div id="qr-code">
+                <img id="qr-image" src="" alt="QR Code">
+                <p class="warning">Refresh QR Code for the Next Transcriptions</p>
+                <button id="refresh-button">Refresh</button>
+            </div>
+
+            <!-- Transcription Box Section -->
+            <div id="transcription-box">
+                <h2>Transcription</h2>
+                <textarea id="transcription" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

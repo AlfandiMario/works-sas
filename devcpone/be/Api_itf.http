@@ -1,0 +1,1152 @@
+# parsing 
+GET https://devcpone.aplikasi.web.id/one-api/api_itf/parse/1 AND SLEEP(5)
+
+###
+#get access token 
+
+POST https://devcpone.aplikasi.web.id/one-api/api_itf/access_token
+Content-Type: application/json
+
+{
+"client" : "W001",
+"secret" : "15a9eee65bfec8ee27b2328dfd7811db"
+}
+
+###
+#refresh token 
+
+POST https://devcpone.aplikasi.web.id/one-api/api_itf/refresh_token
+Authorization: {{token}}
+Content-Type: application/json
+
+{
+"client" : "W001"
+}
+
+
+###
+#get order
+POST https://devcpone.aplikasi.web.id/one-api/api_itf/order
+Authorization: {{token}}
+Content-Type: application/json 
+
+{
+"page" : 1,
+"date" : "2023-12-08"
+}
+###
+#get order 2
+POST https://devcpone.aplikasi.web.id/one-api/api_itf/order
+Authorization: {{token}}
+Content-Type: application/json 
+
+{
+"page" : 2,
+"date" : "2023-12-08"
+}
+###
+# result 
+POST https://devcpone.aplikasi.web.id/one-api/api_itf/result 
+Authorization: {{token}}
+Content-Type: application/json 
+
+{
+  "date": "2024-02-08 08:12:49",
+  "nolab": "04802782DA",
+  "noreg": "CP2406070025",
+  "patient": "Pasien 5 Karyawan PT PMF",
+  "result": [
+    {
+      "abnormal": "Dalam batas normal",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "3,5 - 7,2",
+        "max": {
+          "comparator": "<=",
+          "value": "7.2"
+        },
+        "methode": "URICASE",
+        "min": {
+          "comparator": ">=",
+          "value": "3.5"
+        }
+      },
+      "result": "5.3",
+      "test_code": "W10530500",
+      "test_name": "Asam Urat",
+      "unit": "mg/dL"
+    },
+    {
+      "abnormal": "Cholesterol sedikit meningkat ( 205 )",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Yang diinginkan : < 200\nBatas tinggi : 200 - 239\nTinggi : > 239",
+        "max": {
+          "comparator": "<",
+          "value": "200"
+        },
+        "methode": "CHOD PAP",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "192",
+      "test_code": "W10520300",
+      "test_name": "Cholesterol",
+      "unit": "mg/dL"
+    },
+    {
+      "abnormal": "Normal Sinus Rhythm",
+      "flag": null,
+      "is_quantitative": "N",
+      "ref_range": {
+        "description": null,
+        "methode": null
+      },
+      "result": null,
+      "test_code": "W20120100",
+      "test_name": "ECG",
+      "unit": "-"
+    },
+    {
+      "abnormal": "Dalam batas normal",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "< 140",
+        "max": {
+          "comparator": "<",
+          "value": "140"
+        },
+        "methode": "HEXOKINASE",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "102",
+      "test_code": "W10540400",
+      "test_name": "Glukosa Darah 2 Jam PP",
+      "unit": "mg/dL"
+    },
+    {
+      "abnormal": "Dalam batas normal",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "< 100\nDiagnosis DM >= 126",
+        "max": {
+          "comparator": "<",
+          "value": "100"
+        },
+        "methode": "HEXOKINASE",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "81",
+      "test_code": "W10540200",
+      "test_name": "Glukosa Darah Puasa",
+      "unit": "mg/dL"
+    },
+    {
+      "abnormal": "Non reaktif : indeks 0.447",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Non reaktif : indeks < 0.90\nBorderline : indeks 0.90 - < 1.00\nReaktif : indeks ≥ 1.00",
+        "max": {
+          "comparator": "<",
+          "value": "0"
+        },
+        "methode": "ECLIA",
+        "min": {
+          "comparator": ">",
+          "value": "0"
+        }
+      },
+      "result": "Non reaktif : indeks 0.374",
+      "test_code": "W10610100",
+      "test_name": "HBsAg",
+      "unit": "-"
+    },
+    {
+      "abnormal": "",
+      "flag": "*",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Rendah : < 40\nTinggi : ≥ 60",
+        "max": {
+          "comparator": "<",
+          "value": "60"
+        },
+        "methode": "DIRECT  CHOD  PAP",
+        "min": {
+          "comparator": ">=",
+          "value": "40"
+        }
+      },
+      "result": "36.5",
+      "test_code": "W10520500",
+      "test_name": "HDL Cholesterol",
+      "unit": "mg/dL"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "13,0 -18,0",
+        "max": {
+          "comparator": "<=",
+          "value": "18"
+        },
+        "methode": "SLS HEMOGLOBIN ",
+        "min": {
+          "comparator": ">=",
+          "value": "13"
+        }
+      },
+      "result": "15.6",
+      "test_code": "W10110400",
+      "test_name": "Hemoglobin",
+      "unit": "g/dL"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "3.600 - 10.600",
+        "max": {
+          "comparator": "<=",
+          "value": "10600"
+        },
+        "methode": "LASER OPTICAL FLOWCYTOMETRY ",
+        "min": {
+          "comparator": ">=",
+          "value": "3600"
+        }
+      },
+      "result": "5160",
+      "test_code": "W10110500",
+      "test_name": "Leukosit",
+      "unit": "/µL"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "0 - 3",
+        "max": {
+          "comparator": "<=",
+          "value": "3"
+        },
+        "methode": "LASER OPTICAL FLOWCYTOMETRY ",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "1",
+      "test_code": "W10110601",
+      "test_name": "Eosinofil (Hitung Jenis)",
+      "unit": "%"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "0 - 2",
+        "max": {
+          "comparator": "<=",
+          "value": "2"
+        },
+        "methode": "LASER OPTICAL FLOWCYTOMETRY ",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "1",
+      "test_code": "W10110602",
+      "test_name": "Basofil (Hitung Jenis)",
+      "unit": "%"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "50 - 70 ",
+        "max": {
+          "comparator": "<=",
+          "value": "70"
+        },
+        "methode": "LASER OPTICAL FLOWCYTOMETRY ",
+        "min": {
+          "comparator": ">=",
+          "value": "50"
+        }
+      },
+      "result": "49",
+      "test_code": "W10110603",
+      "test_name": "Neutrofil Segmen (Hitung Jenis)",
+      "unit": "%"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "3 - 5",
+        "max": {
+          "comparator": "<=",
+          "value": "5"
+        },
+        "methode": "LASER OPTICAL FLOWCYTOMETRY ",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "0",
+      "test_code": "W10110604",
+      "test_name": "Neutrofil Batang (Hitung Jenis)",
+      "unit": "%"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "18 - 42",
+        "max": {
+          "comparator": "<=",
+          "value": "42"
+        },
+        "methode": "LASER OPTICAL FLOWCYTOMETRY ",
+        "min": {
+          "comparator": ">=",
+          "value": "18"
+        }
+      },
+      "result": "43",
+      "test_code": "W10110605",
+      "test_name": "Limfosit (Hitung Jenis)",
+      "unit": "%"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "2 - 11",
+        "max": {
+          "comparator": "<=",
+          "value": "11"
+        },
+        "methode": "LASER OPTICAL FLOWCYTOMETRY ",
+        "min": {
+          "comparator": ">=",
+          "value": "2"
+        }
+      },
+      "result": "6",
+      "test_code": "W10110606",
+      "test_name": "Monosit (Hitung Jenis)",
+      "unit": "%"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "0 - 15",
+        "max": {
+          "comparator": "<=",
+          "value": "15"
+        },
+        "methode": "WESTERGREEN",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "5",
+      "test_code": "W10110700",
+      "test_name": "Laju Endap Darah (LED)",
+      "unit": "mm/jam"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "150.000 - 450.000",
+        "max": {
+          "comparator": "<=",
+          "value": "450000"
+        },
+        "methode": "IMPEDANCE WITH HDFC ",
+        "min": {
+          "comparator": ">=",
+          "value": "150000"
+        }
+      },
+      "result": "265000",
+      "test_code": "W10110800",
+      "test_name": "Trombosit",
+      "unit": "/µL"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "40 - 54",
+        "max": {
+          "comparator": "<=",
+          "value": "54"
+        },
+        "methode": "RBC PULSE HEIGHT DETECTION",
+        "min": {
+          "comparator": ">=",
+          "value": "40"
+        }
+      },
+      "result": "48",
+      "test_code": "W10110900",
+      "test_name": "Hematokrit",
+      "unit": "%"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "4,20 - 6,00",
+        "max": {
+          "comparator": "<=",
+          "value": "6"
+        },
+        "methode": "IMPEDANCE WITH HDFC ",
+        "min": {
+          "comparator": ">=",
+          "value": "4.2"
+        }
+      },
+      "result": "5.77",
+      "test_code": "W10111000",
+      "test_name": "Erytrosit",
+      "unit": "10⁶/µL"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "80 - 100",
+        "max": {
+          "comparator": "<=",
+          "value": "100"
+        },
+        "methode": "CALCULATION ",
+        "min": {
+          "comparator": ">=",
+          "value": "80"
+        }
+      },
+      "result": "84",
+      "test_code": "W10111100",
+      "test_name": "MCV",
+      "unit": "fL"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "26 - 34",
+        "max": {
+          "comparator": "<=",
+          "value": "34"
+        },
+        "methode": "CALCULATION ",
+        "min": {
+          "comparator": ">=",
+          "value": "26"
+        }
+      },
+      "result": "27",
+      "test_code": "W10111200",
+      "test_name": "MCH",
+      "unit": "pg/cell"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "32 - 36",
+        "max": {
+          "comparator": "<=",
+          "value": "36"
+        },
+        "methode": "CALCULATION ",
+        "min": {
+          "comparator": ">=",
+          "value": "32"
+        }
+      },
+      "result": "32",
+      "test_code": "W10111300",
+      "test_name": "MCHC",
+      "unit": "g/dL"
+    },
+    {
+      "abnormal": "",
+      "flag": "*",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "11,5 - 14,5",
+        "max": {
+          "comparator": "<=",
+          "value": "14.5"
+        },
+        "methode": "CALCULATION ",
+        "min": {
+          "comparator": ">=",
+          "value": "11.5"
+        }
+      },
+      "result": "14.6",
+      "test_code": "W10111400",
+      "test_name": "RDW",
+      "unit": "%"
+    },
+    {
+      "abnormal": "LDL Cholesterol sedikit meningkat ( 137 )",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Optimal : < 100\nMendekati Optimal : 100 - 129 \nBatas tinggi : 130 - 159\nTinggi : 160 - 189\nSangat tinggi : >= 190",
+        "max": {
+          "comparator": "<",
+          "value": "130"
+        },
+        "methode": "CALCULATION ",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "122",
+      "test_code": "W10520600",
+      "test_name": "LDL Cholesterol",
+      "unit": "mg/dL"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "0,90 - 1,30",
+        "max": {
+          "comparator": "<=",
+          "value": "1.3"
+        },
+        "methode": "JAFFE/PICRATE",
+        "min": {
+          "comparator": ">=",
+          "value": "0.9"
+        }
+      },
+      "result": "1.09",
+      "test_code": "W10530400",
+      "test_name": "Serum Creatinin",
+      "unit": "mg/dL"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Normal : ≥ 90\nSedikit menurun : 60 - 89\nRingan hingga sedang : 45 - 59\nSedang hingga berat : 30 - 44\nSangat menurun : 15 - 29\nGagal ginjal : < 15",
+        "max": {
+          "comparator": "<=",
+          "value": "1000"
+        },
+        "methode": "CKD-EPI",
+        "min": {
+          "comparator": ">=",
+          "value": "90"
+        }
+      },
+      "result": "87",
+      "test_code": "W10530401",
+      "test_name": "eGFR",
+      "unit": "mL/min/1.73 m²"
+    },
+    {
+      "abnormal": "Dalam batas normal",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Normal         < 5,7\nPrediabetes  5,7 - 6,4\nDiabetes       >= 6,5\nSasaran \nPengendalian DM : \n< 7,0",
+        "max": {
+          "comparator": "<=",
+          "value": "5.7"
+        },
+        "methode": "TURBIDIMETRIC INHIBITION IMMUNOASSAY ",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "5.19",
+      "test_code": "W10541000",
+      "test_name": "HbA1c",
+      "unit": "%"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "",
+        "max": {
+          "comparator": "<",
+          "value": "0"
+        },
+        "methode": "CALCULATION ",
+        "min": {
+          "comparator": ">",
+          "value": "0"
+        }
+      },
+      "result": "102",
+      "test_code": "W10541001",
+      "test_name": "Estimated Average Glucose (eAG)",
+      "unit": "mg/dL"
+    },
+    {
+      "abnormal": "Non reaktif",
+      "flag": "",
+      "is_quantitative": "N",
+      "ref_range": {
+        "description": "Non Reaktif",
+        "methode": "IMMUNOCHROMATOGRAPHY"
+      },
+      "result": "Non reaktif",
+      "test_code": "W10240300",
+      "test_name": "Morphine (Screening Test)",
+      "unit": ""
+    },
+    {
+      "abnormal": "Non reaktif",
+      "flag": "",
+      "is_quantitative": "N",
+      "ref_range": {
+        "description": "Non Reaktif",
+        "methode": "IMMUNOCHROMATOGRAPHY"
+      },
+      "result": "Non reaktif",
+      "test_code": "W10240600",
+      "test_name": "Cannabinoid (Screening Test)",
+      "unit": ""
+    },
+    {
+      "abnormal": "Non reaktif",
+      "flag": "",
+      "is_quantitative": "N",
+      "ref_range": {
+        "description": "Non Reaktif",
+        "methode": "IMMUNOCHROMATOGRAPHY"
+      },
+      "result": "Non reaktif",
+      "test_code": "W10241100",
+      "test_name": "Amphetamin (Screening Test)",
+      "unit": ""
+    },
+    {
+      "abnormal": "Pada saat ini didapatkan kelainan berupa :<br/>Overweight ( BMI : 23.57 )<br/><b>Persepsi Warna</b> : Buta warna parsial <br/>Kelainan Refraksi Tanpa kacamata ( -OD : 6/7.5 -OS : 6/7.5 )<br/><b>Gigi</b> : Tambalan └6,6┐",
+      "flag": null,
+      "is_quantitative": "N",
+      "ref_range": {
+        "description": null,
+        "methode": null
+      },
+      "result": null,
+      "test_code": "W40110100",
+      "test_name": "Pemeriksaan Fisik Umum",
+      "unit": "-"
+    },
+    {
+      "abnormal": "Dalam batas normal",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "0 - 37",
+        "max": {
+          "comparator": "<=",
+          "value": "37"
+        },
+        "methode": "IFCC, without P-5-P.",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "14",
+      "test_code": "W10510100",
+      "test_name": "SGOT",
+      "unit": "U/L Opt 37º C"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "0 - 50",
+        "max": {
+          "comparator": "<=",
+          "value": "50"
+        },
+        "methode": "IFCC, without P-5-P.",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "12",
+      "test_code": "W10510200",
+      "test_name": "SGPT",
+      "unit": "U/L Opt 37º C"
+    },
+    {
+      "abnormal": "Tidak tampak pneumonia/ KP aktif/ kelainan lain.",
+      "flag": null,
+      "is_quantitative": "N",
+      "ref_range": {
+        "description": null,
+        "methode": null
+      },
+      "result": null,
+      "test_code": "W30150100",
+      "test_name": "Thorax PA (CR)",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "*",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Normal : < 150\nBatas tinggi : 150 - 199\nTinggi : 200 - 499 \nSangat tinggi : ≥ 500",
+        "max": {
+          "comparator": "<",
+          "value": "150"
+        },
+        "methode": "GPO PAP",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "167",
+      "test_code": "W10520400",
+      "test_name": "Trigliserida",
+      "unit": "mg/dL"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "12,8 - 42,8",
+        "max": {
+          "comparator": "<=",
+          "value": "42.8"
+        },
+        "methode": "UREASE",
+        "min": {
+          "comparator": ">=",
+          "value": "12.8"
+        }
+      },
+      "result": "33.2",
+      "test_code": "W10530100",
+      "test_name": "Ureum",
+      "unit": "mg/dL"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "",
+        "max": {
+          "comparator": "<",
+          "value": "0"
+        },
+        "methode": "REFLECTANCE",
+        "min": {
+          "comparator": ">",
+          "value": "0"
+        }
+      },
+      "result": "Kuning",
+      "test_code": "W10210400",
+      "test_name": "Warna (Urine Lengkap)",
+      "unit": "-"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "",
+        "max": {
+          "comparator": "<",
+          "value": "0"
+        },
+        "methode": "REFLECTANCE",
+        "min": {
+          "comparator": ">",
+          "value": "0"
+        }
+      },
+      "result": "Jernih",
+      "test_code": "W10210500",
+      "test_name": "Kejernihan (Urine Lengkap)",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "1,015 - 1,025",
+        "max": {
+          "comparator": "<=",
+          "value": "1.025"
+        },
+        "methode": "pKa CHANGE ION CONS.",
+        "min": {
+          "comparator": ">=",
+          "value": "1.015"
+        }
+      },
+      "result": "1.029",
+      "test_code": "W10210600",
+      "test_name": "BJ Urine",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "4,8 - 7,4\n",
+        "max": {
+          "comparator": "<=",
+          "value": "7.4"
+        },
+        "methode": "pH INDICATOR",
+        "min": {
+          "comparator": ">=",
+          "value": "4.8"
+        }
+      },
+      "result": "6.0",
+      "test_code": "W10210700",
+      "test_name": "pH Urine",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Negatif",
+        "max": {
+          "comparator": "<",
+          "value": "0"
+        },
+        "methode": "CHANGE OF pH INDICATOR",
+        "min": {
+          "comparator": ">",
+          "value": "0"
+        }
+      },
+      "result": "Negatif",
+      "test_code": "W10210800",
+      "test_name": "Protein (Albumin) Urine",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Negatif",
+        "max": {
+          "comparator": "<",
+          "value": "0"
+        },
+        "methode": "GOD / POD REACTION",
+        "min": {
+          "comparator": ">",
+          "value": "0"
+        }
+      },
+      "result": "Negatif",
+      "test_code": "W10210900",
+      "test_name": "Glukosa Urine",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Negatif",
+        "max": {
+          "comparator": "<",
+          "value": "0"
+        },
+        "methode": "LEGALS TEST",
+        "min": {
+          "comparator": ">",
+          "value": "0"
+        }
+      },
+      "result": "Negatif",
+      "test_code": "W10211000",
+      "test_name": "Keton",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Negatif",
+        "max": {
+          "comparator": "<",
+          "value": "0"
+        },
+        "methode": "DIAZONIUM SALT",
+        "min": {
+          "comparator": ">",
+          "value": "0"
+        }
+      },
+      "result": "Negatif",
+      "test_code": "W10211100",
+      "test_name": "Bilirubin urine",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "< 1",
+        "max": {
+          "comparator": "<",
+          "value": "1"
+        },
+        "methode": "DIAZONIUM SALT",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "Normal",
+      "test_code": "W10211200",
+      "test_name": "Urobilinogen",
+      "unit": "mg/dL"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Negatif",
+        "max": {
+          "comparator": "<",
+          "value": "0"
+        },
+        "methode": "GRIESS TEST",
+        "min": {
+          "comparator": ">",
+          "value": "0"
+        }
+      },
+      "result": "Negatif",
+      "test_code": "W10211400",
+      "test_name": "Nitrit (Urine Lengkap)",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Negatif",
+        "max": {
+          "comparator": "<",
+          "value": "0"
+        },
+        "methode": "ORGANIC HYDROPEROXIDE",
+        "min": {
+          "comparator": ">",
+          "value": "0"
+        }
+      },
+      "result": "Negatif",
+      "test_code": "W10211500",
+      "test_name": "Urine Blood (Urine Lengkap)",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "Negatif",
+        "max": {
+          "comparator": "<",
+          "value": "0"
+        },
+        "methode": "GRANULOCYTE ESTERASE",
+        "min": {
+          "comparator": ">",
+          "value": "0"
+        }
+      },
+      "result": "Negatif",
+      "test_code": "W10211600",
+      "test_name": "Lekosit Esterase (Urine Lengkap)",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "0 - 2",
+        "max": {
+          "comparator": "<=",
+          "value": "2"
+        },
+        "methode": "MICROSCOPIC",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "0 - 1",
+      "test_code": "W10211701",
+      "test_name": "Eritrosit (Sedimen)",
+      "unit": "/lp"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "0 - 3",
+        "max": {
+          "comparator": "<=",
+          "value": "3"
+        },
+        "methode": "MICROSCOPIC",
+        "min": {
+          "comparator": ">=",
+          "value": "0"
+        }
+      },
+      "result": "0 - 1",
+      "test_code": "W10211702",
+      "test_name": "Lekosit (Sedimen)",
+      "unit": "/lp"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "Y",
+      "ref_range": {
+        "description": "5 - 15",
+        "max": {
+          "comparator": "<=",
+          "value": "15"
+        },
+        "methode": "MICROSCOPIC",
+        "min": {
+          "comparator": ">=",
+          "value": "5"
+        }
+      },
+      "result": "0 - 1",
+      "test_code": "W10211703",
+      "test_name": "Epitel (Sedimen)",
+      "unit": "/lp"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "N",
+      "ref_range": {
+        "description": "",
+        "methode": "MICROSCOPIC"
+      },
+      "result": "Negatif",
+      "test_code": "W10211704",
+      "test_name": "Kristal (Sedimen)",
+      "unit": ""
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "N",
+      "ref_range": {
+        "description": "",
+        "methode": "MICROSCOPIC"
+      },
+      "result": "Negatif",
+      "test_code": "W10211705",
+      "test_name": "Silinder (Sedimen)",
+      "unit": "/lp"
+    },
+    {
+      "abnormal": "",
+      "flag": "",
+      "is_quantitative": "N",
+      "ref_range": {
+        "description": "",
+        "methode": "MICROSCOPIC"
+      },
+      "result": "Negatif",
+      "test_code": "W10211706",
+      "test_name": "Lain-lain (Sedimen)",
+      "unit": ""
+    }
+  ]
+}
+
+###
+#sample order
+
+GET https://devcpone.aplikasi.web.id/one-api/api_itf/sample_order/1
+
+
+
+

@@ -1,0 +1,10 @@
+### Sales
+GET http://192.168.250.181/one-api/keu/Acc_one/jurnal/2025-01-09/json/
+
+### AR
+GET http://192.168.250.181/one-api/keu/Acc_one/ar/2025-01-10/json/
+
+
+###
+
+

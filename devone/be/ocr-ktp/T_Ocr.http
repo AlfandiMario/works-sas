@@ -1,0 +1,35 @@
+@host = https://devone.aplikasi.web.id/one-api/test/T_ocr
+
+
+### LLama local
+GET {{ host }}/
+
+### * === DeepInfra === *
+GET {{ host }}/llama_11b
+
+### * === OpenRouter === *
+GET {{ host }}/qwen_vl_plus
+
+###
+GET {{ host }}/qwen2_vl_72b
+
+###
+GET {{ host }}/gemini_flash2
+
+### unused
+GET {{ host }}/llama_90b
+
+### 
+GET {{ host }}/qwen_vl_72b
+
+### * === ALIBABA === *
+GET {{ host }}/qwen_vl_plus_2
+
+### 
+GET {{ host }}/qwen_vl_max
+
+###
+GET {{ host }}/qwen25_vl_3b
+
+### 
+GET {{ host }}/qwen25_vl_7b

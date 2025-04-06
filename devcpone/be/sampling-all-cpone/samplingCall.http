@@ -1,0 +1,125 @@
+@host = https://devcpone.aplikasi.web.id/one-api/mockup/sampling-all-cpone/samplingcall
+
+POST {{ host }}/listpatients
+
+{
+    "xdate": "2025-01-28",
+    "name": "",
+    "nolab": "",
+    "stationid": "2",
+    "statusid": "NEW",
+    "lastid": -1,
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}
+
+###
+GET {{ host }}/getstations
+
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}
+
+### 
+POST {{ host }}/getsampletypes
+
+{
+    "labnumber": "R2501280001",
+    "stationid": "7",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}
+
+###
+POST {{ host }}/doaction
+
+{
+    "act": "call",
+    "id": "20460",
+    "xdate": "2025-01-28",
+    "name": "",
+    "nolab": "",
+    "stationid": "1",
+    "statusid": "NEW",
+    "statusnextid": 1,
+    "sample": {},
+    "lastid": -1,
+    "locationid": "2",
+    "companyid": 0,
+    "staff": {
+        "id": 0,
+        "code": "",
+        "name": "BELUM ADA STAF",
+        "userid": ""
+    },
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjIiLCJNX1VzZXJFbWFpbCI6Impva29AZ21haWwuY29tIiwiTV9Vc2VyVXNlcm5hbWUiOiJqb2tvQGdtYWlsLmNvbSIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9jcG9uZS1zYW1wbGUtYWxsXC8iLCJNX1VzZXJEZWZhdWx0VF9TYW1wbGVTdGF0aW9uSUQiOiIxIiwiTV9TdGFmZk5hbWUiOiJQRVRVR0FTIFNBTVBMRSBMQUIiLCJpc19jb3VyaWVyIjoiTiIsInRpbWVfYXV0b2xvZ291dCI6IjUwIiwiaXAiOiIxMzkuMTk1LjExNy4xMDgiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzEuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzEuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNS0wMS0yOCAxNTo0MDo1NyJ9.qix2x5M-N6qQ1NnAn1Ztur1eKRyMa4Ekx_n6Zd2V0U0"
+}
+
+
+### -------
+### RADIODIAGNOSTIC
+### -------
+
+### sample types
+POST https://devone.aplikasi.web.id/one-api/mockup/samplingradiodiagnostic-v5/samplingcall/getsampletypes
+
+{
+    "orderid": "132582",
+    "stationid": "2",
+    "statusid": "0",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}
+
+### -------
+### ELEKTROMEDIS
+### -------
+
+### sample types
+POST https://devone.aplikasi.web.id/one-api/mockup/samplingelectromedis-v5/samplingcall/getsampletypes
+
+{
+    "orderid": "132582",
+    "stationid": "4",
+    "statusid": "0",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}
+
+### -------
+### OTHERS
+### -------
+POST https://devone.aplikasi.web.id/one-api/mockup/samplingothers-v5/samplingcall/getsampletypes
+
+{
+    "orderid": "132582",
+    "stationid": "7",
+    "statusid": "0",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}
+
+
+### -------
+### DEVONE
+### -------
+POST https://devone.aplikasi.web.id/one-api/mockup/samplinglab-all/samplingcall/search
+
+{
+    "xdate": "2025-01-28",
+    "name": "",
+    "nolab": "",
+    "stationid": "1",
+    "statusid": "NEW",
+    "companyid": 0,
+    "lastid": -1,
+    "locationid": "1",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}
+###
+POST {{ host }}/listpatients
+
+{
+    "xdate": "2025-01-28",
+    "name": "",
+    "nolab": "",
+    "stationid": "1",
+    "statusid": "NEW",
+    "lastid": -1,
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}

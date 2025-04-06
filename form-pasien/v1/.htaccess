@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteBase /xform/v1/
+
+# Exclude static assets from rewriting
+RewriteCond %{REQUEST_URI} ^/xform/v1/assets/ [NC]
+RewriteRule ^ - [L]
+
+# Handle the new RESTful URL structure
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)$ index.php?form=$1&reg=$2&mcu=$3 [L,QSA]
+
+# Handle /xform/v1/response route without .php suffix
+RewriteRule ^response$ response.php [L,QSA]
+
+# Handle requests for PHP files in the "v1" directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?section=$1 [L,QSA]

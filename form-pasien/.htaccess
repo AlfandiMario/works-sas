@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteBase /xform/
+
+# Exclude the "new" directory from existing rules
+RewriteCond %{REQUEST_URI} !^/xform/new/ [NC]
+RewriteCond %{REQUEST_URI} !^/xform/new_2/ [NC]
+
+# Redirect /xform/form to /xform/form?section=0
+RewriteCond %{QUERY_STRING} !^section= [NC]
+RewriteRule ^form$ form?section=0 [L,QSA]
+
+# Existing rules
+RewriteRule ^riwayat.*$ riwayat.php [L,QSA]
+RewriteRule ^test.*$ test.php [L,QSA]
+RewriteRule ^form.*$ form.php [L,QSA]
+RewriteRule ^form-2.*$ form-2.php [L,QSA]
+RewriteRule ^api_handler.*$ api_handler.php [L,QSA]
+RewriteRule ^form_handler.*$ form_handler.php [L,QSA]

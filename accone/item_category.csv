@@ -1,0 +1,5 @@
+﻿itemCategoryID;itemCategoryName;itemCategoryRk_TypeID;itemCategoryIsActive;itemCategoryM_UserID;itemCategoryCreated;itemCategoryLastUpdated
+1;Persediaan;4;Y;353;2025-02-06 11:45:18;2025-02-11 10:09:12
+2;Inventaris;5;Y;1;2025-02-06 11:45:18;2025-02-10 13:17:21
+3;Asset;5;Y;1;2025-02-06 11:45:18;2025-02-10 09:48:39
+4;Jasa;;Y;1;2025-02-06 11:45:18;2025-02-06 11:45:18

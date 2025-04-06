@@ -1,0 +1,67 @@
+@token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjM0MCIsIk1fVXNlclVzZXJuYW1lIjoiYWRtaW5zYXMgIiwiTV9Vc2VyR3JvdXBEYXNoYm9hcmQiOiJvbmUtdWlcL3Rlc3RcL3Z1ZXhcL29uZS1mby1yZWdpc3RyYXRpb24tdjM0LTMyIiwiTV9Vc2VyRGVmYXVsdFRfU2FtcGxlU3RhdGlvbklEIjoiMCIsIk1fU3RhZmZOYW1lIjoiQURNSU4iLCJpc19jb3VyaWVyIjoiTiIsInRpbWVfYXV0b2xvZ291dCI6IjEwMDAwMDAiLCJpcCI6IjEzOS4wLjIzNy4yMTkiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzMuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzMuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNS0wMi0xMSAxMDoxMTowNiIsIk1fU2F0ZWxsaXRlSUQiOjB9.CFS1AqnJ7P6Go6gDs33zsLGLTyTDZGVSmaaeejK2KEc"
+
+###
+POST https://devone.aplikasi.web.id/one-api/mockup/samplinglab-all/samplingcall/search 
+
+{
+    "xdate": "2025-01-28",
+    "name": "",
+    "nolab": "",
+    "stationid": "1",
+    "statusid": "NEW",
+    "companyid": 0,
+    "locationid": "1",
+    "lastid": -1,
+    "token": {{ token }}
+}
+
+### sample types
+POST https://devone.aplikasi.web.id/one-api/mockup/samplinglab-all/samplingcall/getsampletypes
+
+{
+    "orderid": "132583",
+    "stationid": "1",
+    "statusid": "2",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}
+
+### -------
+### RADIODIAGNOSTIC
+### -------
+
+### sample types
+POST https://devone.aplikasi.web.id/one-api/mockup/samplingradiodiagnostic-v5/samplingcall/getsampletypes
+
+{
+    "orderid": "132582",
+    "stationid": "2",
+    "statusid": "0",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}
+
+### -------
+### ELEKTROMEDIS
+### -------
+
+### sample types
+POST https://devone.aplikasi.web.id/one-api/mockup/samplingelectromedis-v5/samplingcall/getsampletypes
+
+{
+    "orderid": "132582",
+    "stationid": "4",
+    "statusid": "0",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}
+
+### -------
+### OTHERS
+### -------
+POST https://devone.aplikasi.web.id/one-api/mockup/samplingothers-v5/samplingcall/getsampletypes
+
+{
+    "orderid": "132582",
+    "stationid": "7",
+    "statusid": "0",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjMiLCJNX1VzZXJVc2VybmFtZSI6ImFkbWluICIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9vbmUtZm8tcmVnaXN0cmF0aW9uLXYzMiIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjAiLCJNX1N0YWZmTmFtZSI6IkFETUlOIiwiaXNfY291cmllciI6Ik4iLCJ0aW1lX2F1dG9sb2dvdXQiOiIxMDAwMDAwIiwiaXAiOiIxMzkuMC4yMzQuMTMiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzAuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzAuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNC0xMS0wNSAwOToxMjozMiIsIk1fU2F0ZWxsaXRlSUQiOjB9.Fkou2gg2E1Qvu51tXt-EBkMW6SAESAmnpoIotAxkihs"
+}
+

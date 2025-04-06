@@ -1,0 +1,244 @@
+# define token
+@token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjM0NSIsIk1fVXNlclVzZXJuYW1lIjoiY29iYWJyYW5jaCIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9hY2Mtb25lLW1kLWNvYVwvIiwiTV9Vc2VyRGVmYXVsdFRfU2FtcGxlU3RhdGlvbklEIjoiMCIsIk1fU3RhZmZOYW1lIjoiQURNSU4iLCJpc19jb3VyaWVyIjoiTiIsInRpbWVfYXV0b2xvZ291dCI6IjEyMCIsIk1fVXNlckxvY2F0aW9uSUQiOiIyIiwiTV9Vc2VyTG9jYXRpb25GbGFnIjoiQiIsIlNfUmVnaW9uYWxOYW1lIjoiU3VyYWJheWEgUmF5YSIsIlNfUmVnaW9uYWxJRCI6IjYiLCJNX0JyYW5jaE5hbWUiOiJQcmFtaXRhIE5nYWdlbCBKYXlhIiwiTV9CcmFuY2hJRCI6IjEzIiwibG9naW5MZXZlbCI6ImJyYW5jaCIsIk1fQnJhbmNoQ29tcGFueUlEIjoiMSIsIk1fQnJhbmNoQ29tcGFueU5hbWUiOiJQVCBQUkFNSVRBIiwiaXAiOiIxNDkuMTEzLjExOS4yNDYiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzEuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzEuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNS0wMS0wOCAxODowOTozNSIsIk1fU2F0ZWxsaXRlSUQiOjB9.0D4KFzCL2VY3R_vM9b6o2wupRu-KjATCRVUL7S89wtc"
+
+@host = https://accone.aplikasi.web.id/one-api/mockup/masterdata/accounting/Journalterimabarang
+
+### get tipe jurnal
+POST {{host}}/getTipeJurnal
+Content-Type: application/json
+
+{
+    "token": {{ token }}
+}
+
+### get tipe jurnal
+POST https://accone.aplikasi.web.id/one-api/mockup/masterdata/accounting/Jurnalumum/getjurnaltype
+Content-Type: application/json
+
+{
+    "token": {{ token }}
+}
+
+### get periode
+POST {{host}}/getPeriode
+
+{
+    "search": "2024",
+    "token": {{ token }}
+}
+
+### get supplier
+POST {{host}}/getSupplier
+
+{
+    "search": "1",
+    "token": {{ token }}
+}
+
+### get default branch
+POST {{host}}/getDefaultBranch
+
+{
+    "branchID": "13",
+    "token": {{ token }}
+}
+
+### get nomor akun coa
+POST {{host}}/getCoa
+
+{
+    "search": "",
+    "token": {{ token }}
+}
+
+
+### create jurnal
+POST {{ host }}/createJurnal
+Content-Type: application/json
+
+{
+    "M_BranchCompanyID": "1",
+    "S_RegionalID": "6",
+    "M_BranchID": "16",
+    "periodeID": "4",
+    "jurnalTitle": "terima barang mulyosari 2",
+    "jurnalDescription": "Deskripsi Terima Barang baru",
+    "jurnalDate": "2025-01-16",
+    "details": [
+        {
+            "coaID": "9",
+            "coaDescription": "BCA PT PRAMITA (4338)",
+            "isDebit": "1",
+            "isCredit": "0",
+            "jurnalTxDebit": "2000",
+            "jurnalTxCredit": "0"
+        },
+        {
+            "coaID": "9",
+            "coaDescription": "BCA PT PRAMITA (4338)",
+            "isDebit": "1",
+            "isCredit": "0",
+            "jurnalTxDebit": "2000",
+            "jurnalTxCredit": "0"
+        },
+        {
+            "coaID": "9",
+            "coaDescription": "BCA PT PRAMITA (4338)",
+            "isDebit": "0",
+            "isCredit": "1",
+            "jurnalTxDebit": "0",
+            "jurnalTxCredit": "4000",
+            "addOns": [
+                {
+                    "jurnalAddOnCode": "SUPCD",
+                    "jurnalAddOnValue": "S0002"
+                },
+                {
+                    "jurnalAddOnCode": "INVGR",
+                    "jurnalAddOnValue": "321321"
+                }
+            ]
+        }
+    ],
+    "token": {{ token }}
+}
+
+### delete jurnal
+POST {{ host }}/deleteJurnal
+
+{
+    "jurnalID": "22",
+    "token": {{ token }}
+}
+
+###
+POST {{ host }}/loadEditDialog
+
+{
+    "jurnalID": "80",
+    "token": {{ token }}
+}
+
+### edit jurnal
+POST {{ host }}/updateJurnal
+
+{
+    "jurnalID": "19",
+    "jurnalDate": "2025-01-10",
+    "periodeID": "4",
+    "jurnalTitle": "Jurnal Terima Barang updated 3",
+    "jurnalDescription": "coba update jurnal",
+    "details": [
+        {
+            "coaID": "2",
+            "coaDescription": "ASET LANCAR",
+            "jurnalTxDebit": "400.00",
+            "jurnalTxCredit": "0"
+        },
+        {
+            "coaID": "1383",
+            "coaDescription": "GRN BLM DITAGIH",
+            "jurnalTxDebit": "0",
+            "jurnalTxCredit": "400.00",
+            "addOns": {
+                "SUPCD": "S0002",
+                "INVGR": "321321"
+            }
+        }
+    ],
+    "token": {{ token }}
+}
+
+
+
+### ----------------- Tidak diakses FE, hanya debugging purposes ----------------- ###
+### ----------------- Tidak diakses FE, hanya debugging purposes ----------------- ###
+
+### bandingin jurnal
+POST {{ host }}/diffJurnalTx
+
+{
+    "jurnalID": "19",
+    "details" : [
+        {
+            "jurnalTxID": "124",
+            "coaID": "2",
+            "coaDescription": "ASET LANCAR",
+            "jurnalTxDebit": "1234.00",
+            "jurnalTxCredit": "0.00",
+            "coaAccountNo": "11"
+        },
+        {
+            "jurnalTxID": "125",
+            "coaID": "1383",
+            "coaDescription": "GRN BLM DITAGIH",
+            "jurnalTxDebit": "0.00",
+            "jurnalTxCredit": "1234.00",
+            "coaAccountNo": "2110100027",
+            "addOns": [
+                {
+                    "jurnalAddOnID": "64",
+                    "jurnalAddOnCode": "SUPCD",
+                    "jurnalAddOnValue": "S0002"
+                },
+                {
+                    "jurnalAddOnID": "65",
+                    "jurnalAddOnCode": "INVGR",
+                    "jurnalAddOnValue": "321321/updated"
+                }
+            ]
+        }
+    ],
+    "token": {{ token }}
+}
+
+
+### get list detail jurnal
+POST {{host}}/getListFormDetail
+
+{
+    "jurnalID": "7",
+    "token": {{ token }}
+}
+
+
+### create  form detail debit
+POST {{ host }}/createFormDetailApi
+
+{
+    "coaID": "9",
+    "jurnalID": "7",
+    "coaDescription": "BCA PT PRAMITA (4338)",
+    "isDebit": "1",
+    "isCredit": "0",
+    "jurnalTxDebit": "100000",
+    "jurnalTxCredit": "0",
+    "SupplierCode": "S0001",
+    "token": {{ token }}
+}
+
+### create form detail kredit
+POST {{ host }}/createFormDetailApi
+
+{
+    "coaID": "9",
+    "jurnalID": "7",
+    "coaDescription": "BCA PT PRAMITA (4338)",
+    "isDebit": "0",
+    "isCredit": "1",
+    "jurnalTxCredit": "100000",
+    "addOns": {
+        "SUPCD": "S0001",
+        "INVGR": "INV-001"
+    },
+    "token": {{ token }}
+}
+
+### delete form detail
+POST {{ host }}/deleteFormDetailApi
+
+{
+    "jurnalTxID": "12",
+    "token": {{ token }}
+}
+

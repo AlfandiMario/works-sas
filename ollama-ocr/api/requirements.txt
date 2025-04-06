@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+requests
+Pillow
+opencv-python
+pdf2image
+PyMuPDF
+jsonpickle

@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteBase /xform/new/
+
+# Allow direct access to files in the "new" directory
+RewriteCond %{REQUEST_URI} ^/xform/new/ [NC]
+RewriteRule ^ - [L]
+
+# Redirect /xform/new/form to /xform/new/form?section=0
+RewriteCond %{QUERY_STRING} !^section= [NC]
+RewriteRule ^form$ form?section=0 [L,QSA]
+
+# Handle requests for PHP files in the "new" directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?section=$1 [L,QSA]
+

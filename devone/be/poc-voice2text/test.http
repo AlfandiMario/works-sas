@@ -1,0 +1,9 @@
+@host = https://devone.aplikasi.web.id/one-api/voice_2text/Voicetotext
+
+
+###
+GET {{ host }}/
+
+
+### * === Cek Transkrip Suara === *
+GET {{ host }}/cekTranskrip/68f8c219-b4ff-4787-ae6d-82626e577e8f

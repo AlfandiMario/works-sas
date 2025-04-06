@@ -1,0 +1,119 @@
+@token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjM0NSIsIk1fVXNlclVzZXJuYW1lIjoiY29iYWJyYW5jaCIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9hY2Mtb25lLW1kLWNvYVwvIiwiTV9Vc2VyRGVmYXVsdFRfU2FtcGxlU3RhdGlvbklEIjoiMCIsIk1fU3RhZmZOYW1lIjoiQURNSU4iLCJpc19jb3VyaWVyIjoiTiIsInRpbWVfYXV0b2xvZ291dCI6IjEyMCIsIk1fVXNlckxvY2F0aW9uSUQiOiIyIiwiTV9Vc2VyTG9jYXRpb25GbGFnIjoiQiIsIlNfUmVnaW9uYWxOYW1lIjoiU3VyYWJheWEgUmF5YSIsIlNfUmVnaW9uYWxJRCI6IjYiLCJNX0JyYW5jaE5hbWUiOiJQcmFtaXRhIE5nYWdlbCBKYXlhIiwiTV9CcmFuY2hJRCI6IjEzIiwibG9naW5MZXZlbCI6ImJyYW5jaCIsIk1fQnJhbmNoQ29tcGFueUlEIjoiMSIsIk1fQnJhbmNoQ29tcGFueU5hbWUiOiJQVCBQUkFNSVRBIiwiaXAiOiIxNDkuMTEzLjExOS4yNDYiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzEuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzEuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNS0wMS0wOCAxODowOTozNSIsIk1fU2F0ZWxsaXRlSUQiOjB9.0D4KFzCL2VY3R_vM9b6o2wupRu-KjATCRVUL7S89wtc"
+
+@host = https://accone.aplikasi.web.id/one-api/mockup/masterdata/accounting/Mediajurnalauto
+# @host = https://accone-prod.aplikasi.web.id/one-api/mockup/masterdata/accounting/Mediajurnalauto
+
+###
+GET {{ host }}/index
+
+### 
+GET {{host}}/insertSales/BB/2025-01-02
+
+{
+    "isDebug": false
+}
+
+### 
+GET {{host}}/sinsertSales/BA/2025-02-03?isregen=0&jurnalno=ACSL/202502/0012
+
+{
+    "isDebug": true
+}
+
+### 
+GET {{host}}/insertAr/BB/2025-01-02
+
+{
+    "isDebug": false
+}
+
+### 
+GET {{host}}/insertArPayment/BB/2025-01-02
+
+{
+    "isDebug": false
+}
+
+### 
+GET {{host}}/insertRkTagihan/BA/2025-01-02
+
+{
+    "isDebug": false
+}
+
+###
+GET {{host}}/insertRkPelunasan/BA/2025-01-02
+
+{
+    "isDebug": false
+}
+
+###
+GET {{ host }}/injectMapBank/6
+
+{
+    "isDebug": true
+}
+
+###
+GET {{ host }}/injectMapBankCab/BB
+
+{
+    "isDebug": true
+}
+
+###
+GET {{ host }}/injectMapNatSubGroup
+
+
+###
+GET {{ host }}/injectMapBankByCoaNo
+
+###
+POST {{ host }}/deleteDummyData
+
+{
+    "jurnalID": "389",
+    "token": {{ token }}
+}
+
+###
+GET http://192.168.250.181/one-api/keu/Acc_one/getBanks
+
+### sales
+GET http://192.168.250.181/one-api/keu/Acc_one/sales/2025-01-03/json/
+
+### ar
+GET http://192.168.250.181/one-api/keu/Acc_one/ar/2025-01-13/json/
+
+### ar payment
+GET http://192.168.250.181/one-api/keu/Acc_one/arPayment/2025-01-02/json/
+
+### TAGIHAN
+GET http://192.168.250.181/one-api/keu/Acc_one/arPaymentRkTagihan/2025-01-10/json/
+
+### PELUNASAN
+GET http://192.168.250.182/one-api/keu/Acc_one/arPaymentRkPelunasan/2025-01-10/
+
+
+### ----------------------------
+### KEBONJERUK
+GET http://192.168.250.182/one-api/keu/Acc_one/arPaymentRkPelunasan/2025-01-02/
+
+###
+GET http://192.168.250.182/one-api/keu/acc_one/arPayment/2025-01-02/json/   
+
+
+
+
+### REGENERATE
+GET https://accone.aplikasi.web.id/one-api/mockup/masterdata/accounting/Mediajurnalauto/insertSales/BA/2025-01-11/1/157
+
+### 
+GET https://accone.aplikasi.web.id/one-api/mockup/masterdata/accounting/Mediajurnalauto/insertAr/BA/2025-01-09/1/157
+
+### 
+GET https://accone.aplikasi.web.id/one-api/mockup/masterdata/accounting/Mediajurnalauto/insertArPayment/BA/2025-01-06/1/246
+
+###
+GET {{ host }}/testExc

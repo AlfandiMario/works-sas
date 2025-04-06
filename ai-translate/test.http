@@ -1,0 +1,37 @@
+@host = http://192.168.0.116:4321
+
+POST {{host}}/translate
+Content-type: application/json
+
+{
+  "input": "Hijau kekuningan"
+}
+
+###
+POST {{host}}/translate
+Content-type: application/json
+
+{
+  "input": "Non reaktif : indeks 0.374 + non reaktif + non reaktif + non reaktif + non reaktif"
+}
+
+###
+POST https://devcpone.aplikasi.web.id/one-api/mockup/ai-translate/gateway/byorderheaderid
+
+{
+  "headerStartDate": "2023-01-01",
+  "headerEndDate": "2024-07-31"
+}
+
+### direct
+GET https://devcpone.aplikasi.web.id/one-api/mockup/ai-translate/gateway/translateLabStr/301
+
+### whole process
+GET https://devcpone.aplikasi.web.id/one-api/mockup/ai-translate/gateway/processOrderHeaders/2023-01-01/2024-07-31/0
+
+### trasnlate model
+POST https://devone.aplikasi.web.id/one-api/ai-lab-translate/ai_lab/sendToAi
+
+{
+  "data": "Non reaktif : indeks 0.374 + Non reaktif"
+}

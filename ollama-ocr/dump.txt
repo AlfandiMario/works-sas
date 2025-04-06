@@ -1,0 +1,15 @@
+Be a Senior AI/ML Engineer and help me to design system based on this case.
+- I have PC with RTX3060 and Ubuntu Server 24.04 (Cuda installed)
+- I have llama3.2-vision:11b run in my PC using ollama app
+- I succesfully run ollama-ocr https://github.com/imanoop7/Ollama-OCR with streamlit
+- I attached the app.py and ocr_processor.py of the ollama-ocr.
+- Now, I want to make it as a rest api with FastAPI and do the OCR for Citizen ID Card.
+- The OCR will always take the same format of ID Card, so I want it prompted to extract some focused fields, which is 'NIK', 'Nama', 'Tempat/Tgl Lahir' and 'Alamat'.
+- The OCR output from model should be in key value pairs, with keys: 'NIK', 'Nama', 'Tempat/Tgl Lahir', and 'Alamat'. The keys must be returned whether the OCR successfully extract the corresponding value or not
+- There are 3 endpoints that should exist in the API:
+1. receive imagefile (jpg/png/jpeg) then return the key-value pairs of extracted fields
+2. receive base64image then return the key-value pairs of extracted fields
+3. endpoints to convert imagefiel to based63image (debugging need)
+4. receive imagefile (jpg/png/jpeg) and return what the model answer (no matter key-value)
+
+Please analyze the given code and the given scenario. Then help me to create the fast api with the simple instalation setup environtment.

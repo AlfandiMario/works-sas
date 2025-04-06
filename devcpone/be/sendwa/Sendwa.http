@@ -1,0 +1,96 @@
+###
+POST https://devcpone.aplikasi.web.id/one-api/mockup/sendwa/sendwa/getdetail
+
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjIiLCJNX1VzZXJFbWFpbCI6Impva29AZ21haWwuY29tIiwiTV9Vc2VyVXNlcm5hbWUiOiJqb2tvQGdtYWlsLmNvbSIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9jcG9uZS1zZXR1cC1tY3UtdjRcLyIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjEiLCJNX1N0YWZmTmFtZSI6IlBFVFVHQVMgU0FNUExFIExBQiIsImlzX2NvdXJpZXIiOiJOIiwidGltZV9hdXRvbG9nb3V0IjoiNjAiLCJpcCI6IjEzOS4xOTUuMTIyLjk2IiwiYWdlbnQiOiJNb3ppbGxhXC81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXRcLzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZVwvMTMwLjAuMC4wIFNhZmFyaVwvNTM3LjM2IEVkZ1wvMTMwLjAuMC4wIiwidmVyc2lvbiI6InYyIiwibGFzdC1sb2dpbiI6IjIwMjQtMTEtMDcgMTY6Mjc6MzAifQ.Oo6X3f0YkFMwK9zIjOxcWc3nwlTikZZxt5f_Vmwkrcw",
+    "startDate": "2023-08-01",
+    "endDate": "2025-01-01",
+    "status": "N",
+    "search": "",
+    "setupID": "56",
+    "page": 1
+}
+
+#### Ketika FO pencet "Kirim"
+POST https://devcpone.aplikasi.web.id/one-api/mockup/sendwa/sendwa/sendMsg
+
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjIiLCJNX1VzZXJFbWFpbCI6Impva29AZ21haWwuY29tIiwiTV9Vc2VyVXNlcm5hbWUiOiJqb2tvQGdtYWlsLmNvbSIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9jcG9uZS1zZXR1cC1tY3UtdjRcLyIsIk1fVXNlckRlZmF1bHRUX1NhbXBsZVN0YXRpb25JRCI6IjEiLCJNX1N0YWZmTmFtZSI6IlBFVFVHQVMgU0FNUExFIExBQiIsImlzX2NvdXJpZXIiOiJOIiwidGltZV9hdXRvbG9nb3V0IjoiNjAiLCJpcCI6IjEzOS4xOTUuMTIyLjk2IiwiYWdlbnQiOiJNb3ppbGxhXC81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXRcLzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZVwvMTMwLjAuMC4wIFNhZmFyaVwvNTM3LjM2IEVkZ1wvMTMwLjAuMC4wIiwidmVyc2lvbiI6InYyIiwibGFzdC1sb2dpbiI6IjIwMjQtMTEtMDcgMTY6Mjc6MzAifQ.Oo6X3f0YkFMwK9zIjOxcWc3nwlTikZZxt5f_Vmwkrcw",
+    "data": [
+        {
+            "orderID": "313",
+            "orderNumber": "R2407140010",
+            "orderDate": "14-07-2024",
+            "patientID": "4861",
+            "patientDOB": "07101969",
+            "M_PatientDOB": "1969-10-07",
+            "patientName": "Bpk.  ASNAWI ",
+            "M_PatientNIP": "70-10.14?20$2)(<4>",
+            "plainName": "ASNAWI",
+            "patientHp": "085159445925",
+            "patientHpOld": "085159445925",
+            "sendWaID": null,
+            "CorporateName": "PT Astra Daihatsu Motor",
+            "XWaOutboxIsSent": "E",
+            "retry": "5",
+            "sentDate": null,
+            "sendEmailType": null,
+            "status": "NO"
+        }
+    ],
+    "setupID": "56"
+}
+
+
+### List Outboxs untuk diambil Gateway (tanpa token)
+POST https://devcpone.aplikasi.web.id/one-api/mockup/sendwa/sendwa/listoutbox
+
+{
+    "statusOutbox": "N",
+    "startDate": "2023-08-01",
+    "endDate": "2025-01-01",
+}
+
+#### up file success
+POST https://devcpone.aplikasi.web.id/one-api/mockup/sendwa/sendwa/uploadfile
+
+{
+    "fileName":"Result-Bpk.__ASNAWI_R2407140010.pdf",
+    "rptUrl":"http://devcpone.aplikasi.web.id/one-api/tools/listrptpatientportal/get_list_patient_rpt_email/313/07101969",
+    "mime":"application/pdf",
+    "XWaOutboxID":"1"
+}
+
+
+### up file gagal
+POST https://devcpone.aplikasi.web.id/one-api/mockup/sendwa/sendwa/uploadfile
+
+{
+    "fileName":"Result_Bpk.__PAISAL_R2407140012.pdf","rptUrl":"http://devcpone.aplikasi.web.id/one-api/tools/listrptpatientportal/get_list_patient_rpt_email/315/06031972","mime":"application/pdf","XWaOutboxID":"3"
+}
+
+
+#### Mengirim WA
+POST https://devcpone.aplikasi.web.id/one-api/mockup/sendwa/sendwa/QontakSendMsg
+
+{
+   "orderID":"314",
+   "orderDate":"14-07-2024",
+   "patientDOB":"08081985",
+   "patientName":"Bpk.  MUNAWIR SAJALI SIREGAR ",
+   "patientHp":"6285159445925",
+   "corpName":"PT Astra Daihatsu Motor",
+   "fileName":"102.34-09243_MUNAWIR_SAJALI_SIREGAR.pdf",
+   "statusOutbox":"N",
+   "retryOutbox":"0",
+   "sendWaID":"1"
+}
+
+### Untuk mengubah status outbox ke 'toStatus' dan retry 'retry'
+POST https://devcpone.aplikasi.web.id/one-api/mockup/sendwa/sendwa/changeStatusOutbox
+
+{
+    "toStatus" : "E",
+    "retry" : "4",
+    "XWaOutboxID" : "3"
+}

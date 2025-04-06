@@ -1,0 +1,467 @@
+array(3) {
+    [
+        0
+    ]=>
+    object(stdClass)#22 (3) {
+        [
+            "Debit"
+        ]=>
+      object(stdClass)#21 (8) {
+            [
+                "F_BillPaymentPusatDate"
+            ]=>
+        string(10) "2024-12-13"[
+                "F_BillPaymentPusatAmount"
+            ]=>
+        string(10) "6600000.00"[
+                "M_PaymentTypeID"
+            ]=>
+        string(1) "4"[
+                "M_PaymentTypeName"
+            ]=>
+        string(8) "Transfer"[
+                "M_BankAccountNo"
+            ]=>
+        string(11) "432-205-688"[
+                "M_CompanyID"
+            ]=>
+        string(4) "6711"[
+                "M_CompanyName"
+            ]=>
+        string(26) "PT PRIVY IDENTITAS DIGITAL"[
+                "M_CompanyNumber"
+            ]=>
+        string(10) "0212400270"
+        }
+      [
+            "AR_RK_Cabang_Lain"
+        ]=>
+      array(3) {
+            [
+                0
+            ]=>
+        object(stdClass)#23 (9) {
+                [
+                    "F_BillID"
+                ]=>
+          string(5) "16024"[
+                    "F_BillIssuePusatDetailTotal"
+                ]=>
+          string(7) "1100000"[
+                    "F_BillIssuePusatDetailUnpaid"
+                ]=>
+          string(1) "0"[
+                    "RK_BranchCode"
+                ]=>
+          string(2) "BA"[
+                    "M_PaymentTypeID"
+                ]=>
+          string(1) "4"[
+                    "M_PaymentTypeName"
+                ]=>
+          string(8) "Transfer"[
+                    "M_CompanyID"
+                ]=>
+          string(4) "6711"[
+                    "M_CompanyName"
+                ]=>
+          string(26) "PT PRIVY IDENTITAS DIGITAL"[
+                    "M_CompanyNumber"
+                ]=>
+          string(10) "0212400270"
+            }
+        [
+                1
+            ]=>
+        object(stdClass)#24 (9) {
+                [
+                    "F_BillID"
+                ]=>
+          string(5) "16414"[
+                    "F_BillIssuePusatDetailTotal"
+                ]=>
+          string(7) "1100000"[
+                    "F_BillIssuePusatDetailUnpaid"
+                ]=>
+          string(1) "0"[
+                    "RK_BranchCode"
+                ]=>
+          string(2) "BA"[
+                    "M_PaymentTypeID"
+                ]=>
+          string(1) "4"[
+                    "M_PaymentTypeName"
+                ]=>
+          string(8) "Transfer"[
+                    "M_CompanyID"
+                ]=>
+          string(4) "6711"[
+                    "M_CompanyName"
+                ]=>
+          string(26) "PT PRIVY IDENTITAS DIGITAL"[
+                    "M_CompanyNumber"
+                ]=>
+          string(10) "0212400270"
+            }
+        [
+                2
+            ]=>
+        object(stdClass)#25 (9) {
+                [
+                    "F_BillID"
+                ]=>
+          string(4) "8398"[
+                    "F_BillIssuePusatDetailTotal"
+                ]=>
+          string(7) "3300000"[
+                    "F_BillIssuePusatDetailUnpaid"
+                ]=>
+          string(1) "0"[
+                    "RK_BranchCode"
+                ]=>
+          string(2) "BD"[
+                    "M_PaymentTypeID"
+                ]=>
+          string(1) "4"[
+                    "M_PaymentTypeName"
+                ]=>
+          string(8) "Transfer"[
+                    "M_CompanyID"
+                ]=>
+          string(4) "6711"[
+                    "M_CompanyName"
+                ]=>
+          string(26) "PT PRIVY IDENTITAS DIGITAL"[
+                    "M_CompanyNumber"
+                ]=>
+          string(10) "0212400270"
+            }
+        }
+      [
+            "AR_Cabang_Ini"
+        ]=>
+      array(1) {
+            [
+                0
+            ]=>
+        object(stdClass)#26 (13) {
+                [
+                    "F_BillID"
+                ]=>
+          string(5) "15205"[
+                    "ArDate"
+                ]=>
+          string(10) "2024-10-12"[
+                    "SumBillDetailTotal"
+                ]=>
+          string(7) "1100000"[
+                    "F_BillIssuePusatDetailUnpaid"
+                ]=>
+          string(1) "0"[
+                    "M_CompanyName"
+                ]=>
+          string(26) "PT PRIVY IDENTITAS DIGITAL"[
+                    "M_CompanyNumber"
+                ]=>
+          string(10) "0212400270"[
+                    "M_CompanyID"
+                ]=>
+          string(4) "6711"[
+                    "M_OmzetTypeName"
+                ]=>
+          string(10) "Perusahaan"[
+                    "M_OmzetTypeID"
+                ]=>
+          string(1) "3"[
+                    "BranchCode"
+                ]=>
+          string(2) "BB"[
+                    "M_PaymentTypeID"
+                ]=>
+          string(1) "4"[
+                    "M_PaymentTypeName"
+                ]=>
+          string(8) "Transfer"[
+                    "M_BankAccountNo"
+                ]=>
+          string(11) "432-205-688"
+            }
+        }
+    }
+    [
+        1
+    ]=>
+    object(stdClass)#28 (3) {
+        [
+            "Debit"
+        ]=>
+      object(stdClass)#27 (8) {
+            [
+                "F_BillPaymentPusatDate"
+            ]=>
+        string(10) "2024-12-13"[
+                "F_BillPaymentPusatAmount"
+            ]=>
+        string(9) "741000.00"[
+                "M_PaymentTypeID"
+            ]=>
+        string(1) "4"[
+                "M_PaymentTypeName"
+            ]=>
+        string(8) "Transfer"[
+                "M_BankAccountNo"
+            ]=>
+        string(11) "432-205-688"[
+                "M_CompanyID"
+            ]=>
+        string(4) "5698"[
+                "M_CompanyName"
+            ]=>
+        string(27) "PT ONEPRIDE UNTUK INDONESIA"[
+                "M_CompanyNumber"
+            ]=>
+        string(7) "0210373"
+        }
+      [
+            "AR_RK_Cabang_Lain"
+        ]=>
+      array(1) {
+            [
+                0
+            ]=>
+        object(stdClass)#29 (9) {
+                [
+                    "F_BillID"
+                ]=>
+          string(4) "8238"[
+                    "F_BillIssuePusatDetailTotal"
+                ]=>
+          string(6) "741000"[
+                    "F_BillIssuePusatDetailUnpaid"
+                ]=>
+          string(1) "0"[
+                    "RK_BranchCode"
+                ]=>
+          string(2) "BD"[
+                    "M_PaymentTypeID"
+                ]=>
+          string(1) "4"[
+                    "M_PaymentTypeName"
+                ]=>
+          string(8) "Transfer"[
+                    "M_CompanyID"
+                ]=>
+          string(4) "5698"[
+                    "M_CompanyName"
+                ]=>
+          string(27) "PT ONEPRIDE UNTUK INDONESIA"[
+                    "M_CompanyNumber"
+                ]=>
+          string(7) "0210373"
+            }
+        }
+      [
+            "AR_Cabang_Ini"
+        ]=>
+      array(0) {}
+    }
+    [
+        2
+    ]=>
+    object(stdClass)#31 (3) {
+        [
+            "Debit"
+        ]=>
+      object(stdClass)#30 (8) {
+            [
+                "F_BillPaymentPusatDate"
+            ]=>
+        string(10) "2024-12-13"[
+                "F_BillPaymentPusatAmount"
+            ]=>
+        string(9) "741000.00"[
+                "M_PaymentTypeID"
+            ]=>
+        string(1) "4"[
+                "M_PaymentTypeName"
+            ]=>
+        string(8) "Transfer"[
+                "M_BankAccountNo"
+            ]=>
+        string(11) "432-205-688"[
+                "M_CompanyID"
+            ]=>
+        string(4) "5698"[
+                "M_CompanyName"
+            ]=>
+        string(27) "PT ONEPRIDE UNTUK INDONESIA"[
+                "M_CompanyNumber"
+            ]=>
+        string(7) "0210373"
+        }
+      [
+            "AR_RK_Cabang_Lain"
+        ]=>
+      array(1) {
+            [
+                0
+            ]=>
+        object(stdClass)#32 (9) {
+                [
+                    "F_BillID"
+                ]=>
+          string(4) "8404"[
+                    "F_BillIssuePusatDetailTotal"
+                ]=>
+          string(6) "741000"[
+                    "F_BillIssuePusatDetailUnpaid"
+                ]=>
+          string(1) "0"[
+                    "RK_BranchCode"
+                ]=>
+          string(2) "BD"[
+                    "M_PaymentTypeID"
+                ]=>
+          string(1) "4"[
+                    "M_PaymentTypeName"
+                ]=>
+          string(8) "Transfer"[
+                    "M_CompanyID"
+                ]=>
+          string(4) "5698"[
+                    "M_CompanyName"
+                ]=>
+          string(27) "PT ONEPRIDE UNTUK INDONESIA"[
+                    "M_CompanyNumber"
+                ]=>
+          string(7) "0210373"
+            }
+        }
+      [
+            "AR_Cabang_Ini"
+        ]=>
+      array(0) {}
+    }
+}
+
+{
+    "status": "OK",
+    "data": [
+        {
+            "Debit": {
+                "F_BillPaymentPusatDate": "2024-12-13",
+                "F_BillPaymentPusatAmount": "6600000.00",
+                "M_PaymentTypeID": "4",
+                "M_PaymentTypeName": "Transfer",
+                "M_BankAccountNo": "432-205-688",
+                "M_CompanyID": "6711",
+                "M_CompanyName": "PT PRIVY IDENTITAS DIGITAL",
+                "M_CompanyNumber": "0212400270"
+            },
+            "AR_RK_Cabang_Lain": [
+                {
+                    "F_BillID": "16024",
+                    "F_BillIssuePusatDetailTotal": "1100000",
+                    "F_BillIssuePusatDetailUnpaid": "0",
+                    "RK_BranchCode": "BA",
+                    "M_PaymentTypeID": "4",
+                    "M_PaymentTypeName": "Transfer",
+                    "M_CompanyID": "6711",
+                    "M_CompanyName": "PT PRIVY IDENTITAS DIGITAL",
+                    "M_CompanyNumber": "0212400270"
+                },
+                {
+                    "F_BillID": "16414",
+                    "F_BillIssuePusatDetailTotal": "1100000",
+                    "F_BillIssuePusatDetailUnpaid": "0",
+                    "RK_BranchCode": "BA",
+                    "M_PaymentTypeID": "4",
+                    "M_PaymentTypeName": "Transfer",
+                    "M_CompanyID": "6711",
+                    "M_CompanyName": "PT PRIVY IDENTITAS DIGITAL",
+                    "M_CompanyNumber": "0212400270"
+                },
+                {
+                    "F_BillID": "8398",
+                    "F_BillIssuePusatDetailTotal": "3300000",
+                    "F_BillIssuePusatDetailUnpaid": "0",
+                    "RK_BranchCode": "BD",
+                    "M_PaymentTypeID": "4",
+                    "M_PaymentTypeName": "Transfer",
+                    "M_CompanyID": "6711",
+                    "M_CompanyName": "PT PRIVY IDENTITAS DIGITAL",
+                    "M_CompanyNumber": "0212400270"
+                }
+            ],
+            "AR_Cabang_Ini": [
+                {
+                    "F_BillID": "15205",
+                    "ArDate": "2024-10-12",
+                    "SumBillDetailTotal": "1100000",
+                    "F_BillIssuePusatDetailUnpaid": "0",
+                    "M_CompanyName": "PT PRIVY IDENTITAS DIGITAL",
+                    "M_CompanyNumber": "0212400270",
+                    "M_CompanyID": "6711",
+                    "M_OmzetTypeName": "Perusahaan",
+                    "M_OmzetTypeID": "3",
+                    "BranchCode": "BB",
+                    "M_PaymentTypeID": "4",
+                    "M_PaymentTypeName": "Transfer",
+                    "M_BankAccountNo": "432-205-688"
+                }
+            ]
+        },
+        {
+            "Debit": {
+                "F_BillPaymentPusatDate": "2024-12-13",
+                "F_BillPaymentPusatAmount": "741000.00",
+                "M_PaymentTypeID": "4",
+                "M_PaymentTypeName": "Transfer",
+                "M_BankAccountNo": "432-205-688",
+                "M_CompanyID": "5698",
+                "M_CompanyName": "PT ONEPRIDE UNTUK INDONESIA",
+                "M_CompanyNumber": "0210373"
+            },
+            "AR_RK_Cabang_Lain": [
+                {
+                    "F_BillID": "8238",
+                    "F_BillIssuePusatDetailTotal": "741000",
+                    "F_BillIssuePusatDetailUnpaid": "0",
+                    "RK_BranchCode": "BD",
+                    "M_PaymentTypeID": "4",
+                    "M_PaymentTypeName": "Transfer",
+                    "M_CompanyID": "5698",
+                    "M_CompanyName": "PT ONEPRIDE UNTUK INDONESIA",
+                    "M_CompanyNumber": "0210373"
+                }
+            ],
+            "AR_Cabang_Ini": []
+        },
+        {
+            "Debit": {
+                "F_BillPaymentPusatDate": "2024-12-13",
+                "F_BillPaymentPusatAmount": "741000.00",
+                "M_PaymentTypeID": "4",
+                "M_PaymentTypeName": "Transfer",
+                "M_BankAccountNo": "432-205-688",
+                "M_CompanyID": "5698",
+                "M_CompanyName": "PT ONEPRIDE UNTUK INDONESIA",
+                "M_CompanyNumber": "0210373"
+            },
+            "AR_RK_Cabang_Lain": [
+                {
+                    "F_BillID": "8404",
+                    "F_BillIssuePusatDetailTotal": "741000",
+                    "F_BillIssuePusatDetailUnpaid": "0",
+                    "RK_BranchCode": "BD",
+                    "M_PaymentTypeID": "4",
+                    "M_PaymentTypeName": "Transfer",
+                    "M_CompanyID": "5698",
+                    "M_CompanyName": "PT ONEPRIDE UNTUK INDONESIA",
+                    "M_CompanyNumber": "0210373"
+                }
+            ],
+            "AR_Cabang_Ini": []
+        }
+    ]
+}

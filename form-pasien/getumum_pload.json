@@ -1,0 +1,41 @@
+{
+    "re_id": "529",
+    "template_name": "Fisik Umum K3",
+    "orderid": "322",
+
+    "trx_id": "529",
+    "sampletypeid": "219",
+    "T_SamplingSoID": "423",
+    "test_name": "PEMERIKSAAN FISIK",
+    "group_name": "Pemeriksaan Fisik",
+    "group_resume_mcu": "FISIK",
+    "test_id": "2562",
+    "nat_testid": "6236",
+    "language_id": "1",
+    "template_id": "27",
+    "template_flag_other": "Y",
+    "status_result": [],
+    "status_result_arr": [
+        {
+            "id": "1",
+            "name": "Normal",
+            "isNormal": "Y"
+        },
+        {
+            "id": "2",
+            "name": "Tidak Normal",
+            "isNormal": "N"
+        }
+    ],
+    "status_name": "VALIDASI 1",
+    "note": "",
+    "status": "VAL1",
+    "language_name": "Bahasa Indonesia",
+    "doctors": "",
+    "doctor_id": "65",
+    "doctor_fullname": "dr. Alessandra Nidia",
+    "details": [],
+    "langs": "",
+    "photos": [],
+    "act": "Fisik Umum K3"
+}

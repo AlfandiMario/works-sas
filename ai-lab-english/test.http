@@ -1,0 +1,55 @@
+POST http://192.168.0.120:4321/translate
+Content-type: application/json
+
+{
+  "input": "Hijau kekuningan"
+}
+
+###
+POST http://192.168.0.120:4321/translate-v3
+Content-type: application/json
+
+{
+  "input": "Hijau kekuningan"
+}
+
+
+###
+POST http://192.168.0.120:4321/translate-v4
+Content-type: application/json
+
+{
+  "input": "Non reaktif : indeks 0.374 + non reaktif + non reaktif + non reaktif + non reaktif"
+}
+
+###
+POST http://192.168.0.120:4321/translate-google
+Content-type: application/json
+
+{
+  "input": "kuning + negatif + positif 1 + reaktif + demam + indeks"
+}
+
+###
+POST http://192.168.0.120:4321/translate-g2
+Content-type: application/json
+
+{
+  "input": "kamu makan apa hari ini?"
+}
+
+####
+POST http://192.168.0.120:4321/translate-array
+Content-type: application/json
+
+{
+  "input": ["kuning" , "negatif", " positif 1", "reaktif"," demam" ," indeks"]
+}
+
+####
+POST http://192.168.0.120:4321/translate-array-google
+Content-type: application/json
+
+{
+ "input": ["non reactif", "negatif", "positif", "demam berdarah", "panu akut", "asam lambung", "non-reaktif: indeks 0.374", "reaktif : indeks 0.9" ,"cacar air", "positive", "non-reactive", "non-reactive: index 0.374", "reactive: index 0.9"]
+}

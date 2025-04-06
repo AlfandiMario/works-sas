@@ -1,0 +1,75 @@
+@token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjM0NSIsIk1fVXNlclVzZXJuYW1lIjoiY29iYWJyYW5jaCIsIk1fVXNlckdyb3VwRGFzaGJvYXJkIjoib25lLXVpXC90ZXN0XC92dWV4XC9hY2Mtb25lLW1kLWNvYVwvIiwiTV9Vc2VyRGVmYXVsdFRfU2FtcGxlU3RhdGlvbklEIjoiMCIsIk1fU3RhZmZOYW1lIjoiQURNSU4iLCJpc19jb3VyaWVyIjoiTiIsInRpbWVfYXV0b2xvZ291dCI6IjEyMCIsIk1fVXNlckxvY2F0aW9uSUQiOiIyIiwiTV9Vc2VyTG9jYXRpb25GbGFnIjoiQiIsIlNfUmVnaW9uYWxOYW1lIjoiU3VyYWJheWEgUmF5YSIsIlNfUmVnaW9uYWxJRCI6IjYiLCJNX0JyYW5jaE5hbWUiOiJQcmFtaXRhIE5nYWdlbCBKYXlhIiwiTV9CcmFuY2hJRCI6IjEzIiwibG9naW5MZXZlbCI6ImJyYW5jaCIsIk1fQnJhbmNoQ29tcGFueUlEIjoiMSIsIk1fQnJhbmNoQ29tcGFueU5hbWUiOiJQVCBQUkFNSVRBIiwiaXAiOiIxNDkuMTEzLjExOS4yNDYiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzEuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzEuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNS0wMS0wOCAxODowOTozNSIsIk1fU2F0ZWxsaXRlSUQiOjB9.0D4KFzCL2VY3R_vM9b6o2wupRu-KjATCRVUL7S89wtc"
+
+@host = https://accone.aplikasi.web.id/one-api/mockup/purchase/transfer/TransferRequest
+
+### get branches
+POST {{host}}/getBranches/
+
+{
+    "S_RegionalID": 8,
+    "token": {{token}}
+}
+
+### get status
+GET {{ host }}/getStatus
+
+{
+    "token": {{token}}
+}
+
+### search
+POST {{ host }}/search
+
+{
+    "startDate": "2025-01-01",
+    "endDate": "2025-02-28",
+    "M_BranchCode": "BA",
+    "StatusName": "",
+    "current_page": 0,
+    "search": "",
+    "token": {{token}}
+}
+
+### create
+POST {{ host }}/createTfRequest
+
+{
+    "S_RegionalID": 8,
+    "M_BranchCode": "BA",
+    "GoodsTfNotes": "test 2",
+    "GoodsTfDate": "2025-02-07",
+    "GoodsTfStatus": "Draft",
+    "isDebug": true,
+    "token": {{token}}
+}
+
+### update
+POST {{ host }}/updateTfRequest
+
+{
+    "GoodsTfID": 1,
+    "S_RegionalID": 8,
+    "M_BranchCode": "BA",
+    "GoodsTfNum": "123",
+    "GoodsTfNotes": "test update",
+    "GoodsTfDate": "2025-01-30",
+    "GoodsTfStatus": "Draft",
+    "token": {{token}}
+}
+
+### delete
+POST {{ host }}/deleteTfRequest
+
+{
+    "GoodsTfID": 1,
+    "token": {{token}}
+}
+
+### get details
+POST {{ host }}/getDetails
+
+{
+    "S_RegionalID": 8,
+    "M_BranchCode": "BA",
+    "token": {{token}}
+}

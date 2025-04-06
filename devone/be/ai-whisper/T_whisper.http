@@ -1,0 +1,12 @@
+@host = https://devone.aplikasi.web.id/one-api/test/T_whisper
+
+### * === Whisper === *
+POST {{ host }}/whisper_1
+
+{
+    "audio_file": "suara-tabrakan-2.m4a",
+    "config": {
+        "language" : "id",
+        "speakerCounts" : 3
+    }
+}

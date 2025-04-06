@@ -1,0 +1,168 @@
+@token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJNX1VzZXJJRCI6IjM0MCIsIk1fVXNlclVzZXJuYW1lIjoiYWRtaW5zYXMgIiwiTV9Vc2VyR3JvdXBEYXNoYm9hcmQiOiJvbmUtdWlcL3Rlc3RcL3Z1ZXhcL29uZS1mby1yZWdpc3RyYXRpb24tdjM0LTMyIiwiTV9Vc2VyRGVmYXVsdFRfU2FtcGxlU3RhdGlvbklEIjoiMCIsIk1fU3RhZmZOYW1lIjoiQURNSU4iLCJpc19jb3VyaWVyIjoiTiIsInRpbWVfYXV0b2xvZ291dCI6IjEwMDAwMDAiLCJpcCI6IjEzOS4wLjIzNy4yMTkiLCJhZ2VudCI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzMuMC4wLjAgU2FmYXJpXC81MzcuMzYgRWRnXC8xMzMuMC4wLjAiLCJ2ZXJzaW9uIjoidjIiLCJsYXN0LWxvZ2luIjoiMjAyNS0wMi0xMSAxMDoxMTowNiIsIk1fU2F0ZWxsaXRlSUQiOjB9.CFS1AqnJ7P6Go6gDs33zsLGLTyTDZGVSmaaeejK2KEc"
+@api= https://devone.aplikasi.web.id/one-api/mockup/masterdata/usergroupv2/
+
+### ** USER GROUP **
+
+### List User Group
+POST {{ api }}/lookup
+
+{
+    "search": "admin lab",
+    "all": "N",
+    "token": {{ token }}
+}
+
+### Create User Group
+POST {{ api }}/addnewusergroup
+
+{
+    "name": "Coba Tambah UserGroup",
+    "dashboard": "one-ui/test/vuex/one-md-usergroup-user-v2/",
+    "clinic": "Y",
+    "token": {{ token }}
+}
+
+### Update User Group
+POST {{ api }}/editusergroup
+
+{
+    "id": "35",
+    "name": "Coba Edit Lagi Nih",
+    "dashboard": "one-ui/test/vuex/one-md-usergroup-user-v2/",
+    "clinic": "Y",
+    "token": {{ token }}
+}
+
+### Delete User Group
+POST {{ api }}/deleteusergroup
+
+{
+    "id": "35",
+    "token": {{ token }}
+}
+
+### ** USER **
+
+### List User
+POST {{ api }}/lookupuser
+
+{
+     "id": "1",
+    "token": {{ token }}
+}
+
+### Create User
+POST {{ api }}/addnewuser
+
+{
+    "xid": 0,
+    "usergroupid": "34",
+    "usergroupname": "Coba User Group",
+    "username": "Coba Add User deh",
+    "password": "pass",
+    "xstaff": {
+        "M_StaffID": "1522",
+        "M_StaffM_BranchID": "1",
+        "M_StaffName": "COBA USER",
+        "M_StaffDOB": "1990-01-01",
+        "M_StaffM_SexID": "1",
+        "M_StaffAddress": "",
+        "M_StaffM_CityID": "0",
+        "M_StaffM_SubareaID": "0",
+        "M_StaffPhone": "",
+        "M_StaffHP": "",
+        "M_StaffM_ReligionID": "0",
+        "M_StaffStartDate": "0000-00-00",
+        "M_StaffEndDate": "0000-00-00",
+        "M_StaffM_PositionID": "0",
+        "M_StaffNIK": "123456",
+        "M_StaffTimeWork": "",
+        "M_StaffTimeWorkSaturday": "",
+        "M_StaffBlood": "",
+        "M_StaffStudy": "",
+        "M_StaffIsCourier": "N",
+        "M_StaffIsActive": "Y",
+        "M_StaffUserID": "3",
+        "M_StaffLastUpdate": "2022-11-30 08:37:49",
+        "M_StaffCode": "STF123456",
+        "M_StaffIDNumber": null
+    },
+    "xsamplestation": "",
+    "xreport": {
+        "R_ReportGroupID": "11",
+        "R_ReportGroupCode": "RPT",
+        "R_ReportGroupName": "Report Coba",
+        "R_ReportGroupCreated": "2023-05-09 10:38:59",
+        "R_ReportGroupLastUpdated": "2023-06-05 10:00:45",
+        "R_ReportGroupIsActive": "Y",
+        "R_ReportGroupColor": "red accent-2"
+    },
+    "iscoordinator": "N",
+    "token": {{ token }}
+}
+
+### Update User
+POST {{ api }}/edituser
+
+{
+    "xid": "1559",
+    "usergroupid": "34",
+    "usergroupname": "Coba User Group",
+    "username": "Coba Edit User deh",
+    "xstaff": {
+        "M_StaffID": "1530",
+        "M_StaffM_BranchID": "1",
+        "M_StaffName": "YACOBA",
+        "M_StaffDOB": "1997-08-19",
+        "M_StaffM_SexID": "1",
+        "M_StaffAddress": "",
+        "M_StaffM_CityID": "0",
+        "M_StaffM_SubareaID": "0",
+        "M_StaffPhone": "",
+        "M_StaffHP": "",
+        "M_StaffM_ReligionID": "0",
+        "M_StaffStartDate": "0000-00-00",
+        "M_StaffEndDate": "0000-00-00",
+        "M_StaffM_PositionID": "0",
+        "M_StaffNIK": "",
+        "M_StaffTimeWork": "",
+        "M_StaffTimeWorkSaturday": "",
+        "M_StaffBlood": "",
+        "M_StaffStudy": "",
+        "M_StaffIsCourier": "N",
+        "M_StaffIsActive": "Y",
+        "M_StaffUserID": "340",
+        "M_StaffLastUpdate": "2023-12-20 15:42:16",
+        "M_StaffCode": "STF",
+        "M_StaffIDNumber": null
+    },
+    "xsamplestation": "0",
+    "xreport": {
+        "R_ReportGroupID": "11",
+        "R_ReportGroupCode": "RPT",
+        "R_ReportGroupName": "Report Coba",
+        "R_ReportGroupCreated": "2023-05-09 10:38:59",
+        "R_ReportGroupLastUpdated": "2023-06-05 10:00:45",
+        "R_ReportGroupIsActive": "Y",
+        "R_ReportGroupColor": "red accent-2"
+    },
+    "xusergroupname": {
+        "M_UserGroupID": "1",
+        "M_UserGroupName": "Admin",
+        "M_UserGroupDashboard": "one-ui/test/vuex/one-fo-registration-v34-32",
+        "M_UserGroupIsClinic": "N",
+        "M_UserGroupCreated": "2019-04-16 16:04:06",
+        "M_UserGroupLastUpdated": "2025-01-03 11:46:17",
+        "M_UserGroupIsActive": "Y"
+    },
+    "iscoordinator": "N",
+    "token": {{ token }}
+}
+
+### Delete User
+POST {{ api }}/deleteuser
+
+{
+    "id": "1559",
+    "token": {{ token }}
+}
